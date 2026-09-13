@@ -5,16 +5,16 @@
     align-items: center;
 }
 
-.navbar-brand {
+.navbar-brand a {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     cursor: pointer;
 }
 
 .navbar-brand .logo-text {
     color: tomato;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
     letter-spacing: -0.5px;
     font-family: 'Outfit', sans-serif;
@@ -24,6 +24,7 @@
     height: 48px;
     width: auto;
     object-fit: contain;
+    display: block;
 }
 
 .navbar-menu {
