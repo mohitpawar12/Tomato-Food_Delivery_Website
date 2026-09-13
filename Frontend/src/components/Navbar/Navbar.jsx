@@ -3,7 +3,7 @@ import './Navbar.css'
 import { assets } from '../../assets/frontend_assets/assets'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
 
     const [menu, setMenu] = useState("home")
 
@@ -11,8 +11,7 @@ const Navbar = () => {
         <div className='navbar'>
 
             <div className="navbar-brand">
-                <img className='logo' src="./favicon.png" alt="logo"  />
-                {/* <img src={assets.logo} alt="logo-text" className="logo-text" /> */}
+                <img className='logo' src="./favicon.png" alt="logo" />
                 <span className="logo-text">Tomato</span>
             </div>
 
@@ -31,7 +30,7 @@ const Navbar = () => {
 
                     <div className="dot"></div>
                 </div>
-                <button>Sign in</button>
+                <button onClick={() => setShowLogin(true)}>Sign in</button>
             </div>
 
         </div>
